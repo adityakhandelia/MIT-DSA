@@ -52,13 +52,13 @@ int main() {
     adj_tilld[0].push_back({1, 10});
     adj_tilld[1].push_back({2, 20});
     
-    // Graph after detonation
+    
     vector<vector<int>> adj_afterd[V];
     adj_afterd[2].push_back({3, 30});
     adj_afterd[3].push_back({4, 40});
 
-    int D = 2; // Node where the detonation happens
-    int e = 1; // Elevation drop due to detonation
+    int D = 2;
+    int e = 1;
 
     bombdetonation(adj_full, V, adj_tilld, adj_afterd, D, e, elevation);
 
