@@ -30,11 +30,9 @@ void check_conservative(int V,vector<vector<int>>&edges,int S){
 }
 
  int main() {
-    // Hardcoded values for the number of vertices and edges
-    int V = 5;  // Number of vertices
-    int E = 7;  // Number of edges
+        int V = 5;  
+    int E = 7;  
 
-    // Hardcoded edge list: {source, destination, weight}
     vector<vector<int>> edges = {
         {0, 1, -1},
         {0, 2, 4},
@@ -46,11 +44,10 @@ void check_conservative(int V,vector<vector<int>>&edges,int S){
         {4, 3, -3}
     };
 
-    // Hardcoded source vertex
+    
     int S = 0;
 
-    // Call function to check if the field is conservative
-    check_conservative(V, edges, S);
+        check_conservative(V, edges, S);
 
     return 0;
 }
